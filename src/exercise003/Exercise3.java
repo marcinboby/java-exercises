@@ -10,7 +10,7 @@ package exercise003;
 public class Exercise3 {
     public static void main(String[] args) {
         int number1 =50, number2 = 3;
-        double result= number1/number2;
+        double result= number1/(double)number2;
         System.out.println("Result of dividing two numbers(" + number1+ ", " + number2 + ") is: " + result);
     }
 }
