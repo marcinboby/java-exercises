@@ -9,7 +9,7 @@ package exercise002;
  */
 public class Exercise2 {
     public static void main(String[] args) {
-        int number1, number2, sum;
-        System.out.println("Result of adding two numbers(" + (number1 = 74) + ", " + (number2= 36) + ") is: " + (sum= number1+number2));
+        int number1= 74, number2= 36, sum= number1+number2;
+        System.out.println("Result of adding two numbers(" + number1 + ", " + number2 + ") is: " + sum);
     }
 }
