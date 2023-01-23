@@ -17,22 +17,22 @@ public class Exercise4 {
         int aNumber1 = -5;
         int aNumber2 = 8;
         int aNumber3 = 6;
+        int aResult = aNumber1 + aNumber2 * aNumber3;
         int bNumber1 = 55;
         int bNumber2 = 9;
+        int bResult = (bNumber1+bNumber2) % bNumber2;
         int cNumber1 = 20;
         int cNumber2 = -3;
         int cNumber3 = 5;
         int cNumber4 = 8;
+        double cResult = cNumber1 + cNumber2 * (double)(cNumber3 /(double)cNumber4);
+        cResult = Math.ceil(cResult);
         int dNumber1 = 5;
         int dNumber2 = 15;
         int dNumber3 = 3;
         int dNumber4 = 2;
         int dNumber5 = 8;
         int dNumber6 = 3;
-        int aResult = aNumber1 + aNumber2 * aNumber3;
-        int bResult = (bNumber1+bNumber2) % 9;
-        double cResult = cNumber1 + cNumber2 * (cNumber3 /(double)cNumber4);
-        cResult = Math.ceil(cResult);
         int dResult = dNumber1 + ((dNumber2 / dNumber3) * dNumber4) -(dNumber5 % dNumber6);
 
         System.out.println("wynik pierwszego dzialania: -5 + 8 * 6 to " + aResult);
