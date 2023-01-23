@@ -11,7 +11,7 @@ public class Exercise7 {
         System.out.print("Input number: ");
         double num = scanner.nextDouble();
 
-        for(int i =1; i<=10; i++){
+        for (int i = 1; i <= 10; i++) {
             double result = num * i;
             System.out.println("Sum of multiplication " + num + " by " + i + " is : " + result);
         }
