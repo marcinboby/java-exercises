@@ -11,9 +11,11 @@ public class Exercise7 {
         System.out.print("Input number: ");
         double num = scanner.nextDouble();
 
-        for (int i = 1; i <= 10; i++) {
-            double result = num * i;
-            System.out.println("Sum of multiplication " + num + " by " + i + " is : " + result);
+        for (int i = 0; i < 10; i++) {
+            int multiplier = i + 1;
+            double result = num * multiplier;
+            System.out.println("Sum of multiplication " + num + " by " + multiplier + " is : " + result);
+
         }
     }
 }
