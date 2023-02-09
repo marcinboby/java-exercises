@@ -13,10 +13,9 @@ public class Exercise8 {
         System.out.print("Input second number: ");
         int secondVar = scanner.nextInt();
         System.out.println("Before swap: firstVar: " + firstVar + ", secondVar: " + secondVar);
-        int container;
-        container = firstVar;
-        firstVar = secondVar;
-        secondVar = container;
+        firstVar = firstVar + secondVar;
+        secondVar = firstVar - secondVar;
+        firstVar = firstVar - secondVar;
         System.out.println("After swap: firstVar: " + firstVar + ", secondVar: " + secondVar);
     }
 }
