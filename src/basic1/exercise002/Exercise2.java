@@ -1,4 +1,4 @@
-package exercise002;
+package basic1.exercise002;
 
 /**
  *  Write a Java program to print the sum of two numbers.

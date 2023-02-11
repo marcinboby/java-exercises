@@ -1,4 +1,4 @@
-package exercise004;
+package basic1.exercise004;
 
 /**
  * Write a Java program to print the result of the following operations.
