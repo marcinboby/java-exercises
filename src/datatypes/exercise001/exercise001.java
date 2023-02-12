@@ -7,11 +7,10 @@ import java.util.Scanner;
  */
 public class exercise001 {
     public static void main(String[] args) {
-        Double fahrenheitTemperature, celsiusTemperature;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input temperature in Fahrenheit: ");
-        fahrenheitTemperature = scanner.nextDouble();
-        celsiusTemperature = getCelsiusTemperature(fahrenheitTemperature);
+        Double fahrenheitTemperature = scanner.nextDouble();
+        Double celsiusTemperature = getCelsiusTemperature(fahrenheitTemperature);
         System.out.println(fahrenheitTemperature + " Fahrenheit degree is " + celsiusTemperature + " Celsius degree");
     }
 

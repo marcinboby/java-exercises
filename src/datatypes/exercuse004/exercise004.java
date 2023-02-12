@@ -7,11 +7,9 @@ import java.util.Scanner;
  */
 public class exercise004 {
     public static void main(String[] args) {
-        long inputMinutes;
-
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input the number of minutes: ");
-        inputMinutes = scanner.nextLong();
+        long inputMinutes = scanner.nextLong();
         convertMinutesIntoYearsAndDays(inputMinutes);
     }
 

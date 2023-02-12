@@ -7,12 +7,12 @@ import java.util.Scanner;
  */
 public class Exercise003 {
     public static void main(String[] args) {
-        int number;
+
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.print("Input number between 0 and 1000: ");
-            number = scanner.nextInt();
+            int number = scanner.nextInt();
             if ((0 <= number) && (1000 >= number)) {
                 int sum = digitSum(number);
                 System.out.println("Sum of digits from number: " + number + " is : " + sum);

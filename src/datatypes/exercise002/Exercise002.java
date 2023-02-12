@@ -7,13 +7,14 @@ import java.util.Scanner;
  */
 public class Exercise002 {
     public static void main(String[] args) {
-        Double inch, meter;
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input number in inches: ");
-        inch = scanner.nextDouble();
-        meter = getMeter(inch);
+        Double inch = scanner.nextDouble();
+        Double meter = getMeter(inch);
         System.out.println(inch + " inch/es is/are: " + meter + " meter/s");
     }
+
     private static Double getMeter(Double inch) {
         final double v = 2.54;
         return inch * v;
