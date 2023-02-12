@@ -1,4 +1,4 @@
-package exercise001;
+package simpleexercises1.exercise001;
 
 public class FirstExercise {
     /*
