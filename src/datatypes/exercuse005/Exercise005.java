@@ -10,6 +10,7 @@ public class Exercise005 {
         System.out.print("Input zone offset: ");
         Scanner scanner = new Scanner(System.in);
         int zone = scanner.nextInt();
+        System.out.println(zone%10);
         getCurrentTime(zone);
     }
 

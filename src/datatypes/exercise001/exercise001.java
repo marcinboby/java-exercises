@@ -14,7 +14,8 @@ public class exercise001 {
         celsiusTemperature = getCelsiusTemperature(fahrenheitTemperature);
         System.out.println(fahrenheitTemperature + " Fahrenheit degree is " + celsiusTemperature + " Celsius degree");
     }
+
     private static Double getCelsiusTemperature(Double fahrenheitTemperature) {
-        return fahrenheitTemperature - (32 * (5 / (double) 9));
+        return fahrenheitTemperature - (32 * (5.0 / 9.0));
     }
 }

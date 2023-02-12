@@ -18,9 +18,9 @@ public class exercise004 {
     private static void convertMinutesIntoYearsAndDays(long inputMinutes) {
         int minutesIn365days = 525600;
         int minutesInDay = 1440;
-        int minutesInHour = 60;
+        double minutesInHour = 60.0;
         if (inputMinutes < minutesInDay) {
-            System.out.println(inputMinutes + " minutes is " + (inputMinutes / (double) minutesInHour) + " hour/s");
+            System.out.println(inputMinutes + " minutes is " + (inputMinutes / minutesInHour) + " hour/s");
         } else if (inputMinutes > minutesInDay && inputMinutes < minutesIn365days) {
             long minutesToDay = inputMinutes / minutesInDay;
 

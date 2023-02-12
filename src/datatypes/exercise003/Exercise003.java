@@ -15,34 +15,20 @@ public class Exercise003 {
             number = scanner.nextInt();
             if ((0 <= number) && (1000 >= number)) {
                 int sum = digitSum(number);
-                int alternativeDigitSum = alternativeDigitSum(number);
                 System.out.println("Sum of digits from number: " + number + " is : " + sum);
-                System.out.println("Sum of digits from number: " + number + " is : " + alternativeDigitSum);
                 break;
             } else {
-                System.out.println("Number is not in the range, try again");
+                System.out.println("Number is out of range, try again");
             }
         }
     }
 
     private static int digitSum(int number) {
-        int first = number % 10;
-        int reminder = number / 10;
-        int second = reminder % 10;
-        reminder = reminder / 10;
-        int thrid = reminder % 10;
-        reminder = reminder / 10;
-        int fourth = reminder % 10;
-        return first + second + thrid + fourth;
-
-    }
-
-    private static int alternativeDigitSum(int number) {
-        int expectedSum = 0;
+        int sum = 0;
         while (number != 0) {
-            expectedSum += number % 10;
+            sum += number % 10;
             number /= 10;
         }
-        return expectedSum;
+        return sum;
     }
 }
