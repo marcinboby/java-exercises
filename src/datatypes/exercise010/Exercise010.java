@@ -13,13 +13,11 @@ public class Exercise010 {
         System.out.print("Input number to break into a sequence of individual digits: ");
         int numberToBreak = sc.nextInt();
         ArrayList<Integer> arrayOfIntegers = new ArrayList<>();
-        
         while (numberToBreak != 0) {
             int number = numberToBreak % 10;
             numberToBreak /= 10;
             arrayOfIntegers.add(number);
         }
-
         Collections.reverse(arrayOfIntegers);
         for (Integer number : arrayOfIntegers) {
             System.out.print(number + " ");
