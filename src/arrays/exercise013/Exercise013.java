@@ -1,7 +1,9 @@
 package arrays.exercise013;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /***
  * Write a Java program to find the duplicate values of an array of integer values.
@@ -9,16 +11,15 @@ import java.util.List;
 public class Exercise013 {
     public static void main(String[] args) {
         int[] arr = {12, 3, 5, 1, 6, 21, 1, 432, 234, 12, 1};
-        List<Integer> duplicatedIntegers = new ArrayList<>();
-
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] == arr[j] && i != j) {
-                    duplicatedIntegers.add(arr[i]);
-                }
-
+        Set<Integer> set = new HashSet<>();
+        Set<Integer> duplicatedValues = new HashSet<>();
+        for (int i : arr) {
+            if (set.contains(i)) {
+                duplicatedValues.add(i);
+            } else {
+                set.add(i);
             }
         }
-        System.out.println(duplicatedIntegers);
+        System.out.println("Duplicated values: " + duplicatedValues);
     }
 }
